@@ -20,7 +20,7 @@ using System.Linq;
 using System.Text;
 using NUnit.Framework;
 
-namespace Xamarin.Auth.Test
+namespace Xamarin.Auth._MobileServices.Test
 {
 	[TestFixture]
 	public class RequestTest

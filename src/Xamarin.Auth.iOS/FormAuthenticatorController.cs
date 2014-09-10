@@ -21,10 +21,10 @@ using System.Threading.Tasks;
 using System.Threading;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
-using Xamarin.Controls;
-using Xamarin.Utilities.iOS;
+using Xamarin.Controls._MobileServices;
+using Xamarin.Utilities._MobileServices.iOS;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	internal class FormAuthenticatorController : UITableViewController
 	{

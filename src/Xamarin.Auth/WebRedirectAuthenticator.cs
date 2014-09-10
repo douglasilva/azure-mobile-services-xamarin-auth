@@ -16,9 +16,9 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Xamarin.Utilities;
+using Xamarin.Utilities._MobileServices;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	/// <summary>
 	/// An authenticator that displays web pages until a given "redirect" page is encountered. It then
@@ -34,7 +34,7 @@ namespace Xamarin.Auth
 		Uri redirectUrl;
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Xamarin.Auth.WebRedirectAuthenticator"/> class.
+		/// Initializes a new instance of the <see cref="Xamarin.Auth._MobileServices.WebRedirectAuthenticator"/> class.
 		/// </summary>
 		/// <param name='initialUrl'>
 		/// The initial URL loaded into the web browser.

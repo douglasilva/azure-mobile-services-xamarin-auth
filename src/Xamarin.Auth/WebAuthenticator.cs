@@ -27,7 +27,7 @@ using UIContext = Android.Content.Context;
 using AuthenticateUIType = System.Object;
 #endif
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	/// <summary>
 	/// An authenticator that displays a web page.
@@ -68,7 +68,7 @@ namespace Xamarin.Auth
 
 		/// <summary>
 		/// Event handler called when a new page has been loaded in the web browser.
-		/// Implementations should call <see cref="Authenticator.OnSucceeded(Xamarin.Auth.Account)"/> if this page
+		/// Implementations should call <see cref="Authenticator.OnSucceeded(Xamarin.Auth._MobileServices.Account)"/> if this page
 		/// signifies a successful authentication.
 		/// </summary>
 		/// <param name='url'>

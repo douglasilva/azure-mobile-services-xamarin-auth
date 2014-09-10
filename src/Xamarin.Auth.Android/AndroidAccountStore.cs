@@ -23,7 +23,7 @@ using Java.IO;
 using Android.Content;
 using Android.Runtime;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	/// <summary>
 	/// AccountStore that uses a KeyStore of PrivateKeys protected by a fixed password

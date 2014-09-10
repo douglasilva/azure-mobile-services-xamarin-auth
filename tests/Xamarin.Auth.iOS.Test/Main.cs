@@ -20,7 +20,7 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace Xamarin.Auth.iOS.Test
+namespace Xamarin.Auth._MobileServices.iOS.Test
 {
 	public class Application
 	{

@@ -17,10 +17,10 @@ using System;
 using System.Threading.Tasks;
 using MonoTouch.UIKit;
 using MonoTouch.Foundation;
-using Xamarin.Utilities.iOS;
-using Xamarin.Controls;
+using Xamarin.Utilities._MobileServices.iOS;
+using Xamarin.Controls._MobileServices;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	/// <summary>
 	/// The ViewController that the WebAuthenticator presents to the user.

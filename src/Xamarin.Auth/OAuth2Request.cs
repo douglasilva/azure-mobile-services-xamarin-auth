@@ -15,9 +15,9 @@
 //
 using System;
 using System.Collections.Generic;
-using Xamarin.Auth;
+using Xamarin.Auth._MobileServices;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	/// <summary>
 	/// Request that is authenticated using an account retrieved from an <see cref="OAuth2Authenticator"/>.

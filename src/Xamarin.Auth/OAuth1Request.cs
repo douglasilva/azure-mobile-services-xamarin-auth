@@ -18,9 +18,9 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Net;
 using System.Collections.Generic;
-using Xamarin.Auth;
+using Xamarin.Auth._MobileServices;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	/// <summary>
 	/// Request that is authenticated using an account retrieved from an <see cref="OAuth1Authenticator"/>.
@@ -34,7 +34,7 @@ namespace Xamarin.Auth
 		bool includeMultipartsInSignature;
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Xamarin.Auth.OAuth1Request"/> class.
+		/// Initializes a new instance of the <see cref="Xamarin.Auth._MobileServices.OAuth1Request"/> class.
 		/// </summary>
 		/// <param name='method'>
 		/// The HTTP method.
@@ -43,7 +43,7 @@ namespace Xamarin.Auth
 		/// The URL.
 		/// </param>
 		/// <param name='parameters'>
-		/// Parameters that will pre-populate the <see cref="Xamarin.Auth.Request.Parameters"/> property or <see langword="null"/>.
+		/// Parameters that will pre-populate the <see cref="Xamarin.Auth._MobileServices.Request.Parameters"/> property or <see langword="null"/>.
 		/// </param>
 		/// <param name='account'>
 		/// The account used to authenticate this request.

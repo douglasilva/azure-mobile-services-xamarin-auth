@@ -18,7 +18,7 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Xamarin.Auth.Test
+namespace Xamarin.Auth._MobileServices.Test
 {
 	[TestFixture]
 	public class OAuth1Test

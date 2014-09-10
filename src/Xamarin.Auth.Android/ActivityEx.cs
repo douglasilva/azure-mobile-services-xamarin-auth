@@ -1,7 +1,7 @@
 using System;
 using Android.App;
 
-namespace Xamarin.Utilities.Android
+namespace Xamarin.Utilities._MobileServices.Android
 {
 	internal static class ActivityEx
 	{

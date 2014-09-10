@@ -20,9 +20,9 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Net;
 using System.Globalization;
-using Xamarin.Utilities;
+using Xamarin.Utilities._MobileServices;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	/// <summary>
 	/// A collection of utility functions for signing OAuth 1.0 requests.

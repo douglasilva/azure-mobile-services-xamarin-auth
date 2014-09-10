@@ -15,7 +15,7 @@
 //
 using System;
 
-namespace Xamarin.Utilities
+namespace Xamarin.Utilities._MobileServices
 {
 	internal static class ExceptionEx
 	{

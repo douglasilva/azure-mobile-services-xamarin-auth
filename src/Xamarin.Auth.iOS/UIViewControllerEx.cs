@@ -17,7 +17,7 @@ using System;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-namespace Xamarin.Utilities.iOS
+namespace Xamarin.Utilities._MobileServices.iOS
 {
 	internal static class UIViewControllerEx
 	{

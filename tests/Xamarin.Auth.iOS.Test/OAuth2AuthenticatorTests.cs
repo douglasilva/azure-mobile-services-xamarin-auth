@@ -17,7 +17,7 @@
 using System;
 using NUnit.Framework;
 
-namespace Xamarin.Auth.Test
+namespace Xamarin.Auth._MobileServices.Test
 {
 	[TestFixture]
 	public class OAuth2AuthenticatorTests

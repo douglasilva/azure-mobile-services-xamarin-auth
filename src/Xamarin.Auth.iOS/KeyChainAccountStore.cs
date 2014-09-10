@@ -19,7 +19,7 @@ using System.Collections.Generic;
 using System.Linq;
 using MonoTouch.Foundation;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	internal class KeyChainAccountStore : AccountStore
 	{

@@ -16,7 +16,7 @@
 using System;
 using MonoTouch.Accounts;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 #if XAMARIN_AUTH_INTERNAL
 	internal class ACAccountWrapper : Account

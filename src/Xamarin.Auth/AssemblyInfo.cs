@@ -19,11 +19,11 @@ using System.Runtime.CompilerServices;
 // Information about this assembly is defined by the following attributes. 
 // Change them to the values specific to your project.
 
-[assembly: AssemblyTitle("Xamarin.Auth")]
+[assembly: AssemblyTitle("Xamarin.Auth._MobileServices")]
 [assembly: AssemblyDescription("Cross platform authentication library")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Xamarin Inc.")]
-[assembly: AssemblyProduct("Xamarin.Auth")]
+[assembly: AssemblyProduct("Xamarin.Auth._MobileServices")]
 [assembly: AssemblyCopyright("2012-2013 Xamarin Inc.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

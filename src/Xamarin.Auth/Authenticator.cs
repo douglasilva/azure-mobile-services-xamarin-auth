@@ -17,7 +17,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Threading;
-using Xamarin.Utilities;
+using Xamarin.Utilities._MobileServices;
 
 #if PLATFORM_IOS
 using AuthenticateUIType = MonoTouch.UIKit.UIViewController;
@@ -28,7 +28,7 @@ using UIContext = Android.Content.Context;
 using AuthenticateUIType = System.Object;
 #endif
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	/// <summary>
 	/// A process and user interface to authenticate a user.
@@ -70,7 +70,7 @@ namespace Xamarin.Auth
 		public bool HasCompleted { get; private set; }
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Xamarin.Auth.Authenticator"/> class.
+		/// Initializes a new instance of the <see cref="Xamarin.Auth._MobileServices.Authenticator"/> class.
 		/// </summary>
 		public Authenticator ()
 		{
@@ -240,7 +240,7 @@ namespace Xamarin.Auth
 		public Account Account { get; private set; }
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Xamarin.Auth.AuthenticatorCompletedEventArgs"/> class.
+		/// Initializes a new instance of the <see cref="Xamarin.Auth._MobileServices.AuthenticatorCompletedEventArgs"/> class.
 		/// </summary>
 		/// <param name='account'>
 		/// The account created or <see langword="null"/> if authentication failed or was canceled.
@@ -277,7 +277,7 @@ namespace Xamarin.Auth
 		public Exception Exception { get; private set; }
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Xamarin.Auth.AuthenticatorErrorEventArgs"/> class
+		/// Initializes a new instance of the <see cref="Xamarin.Auth._MobileServices.AuthenticatorErrorEventArgs"/> class
 		/// with a message but no exception.
 		/// </summary>
 		/// <param name='message'>
@@ -289,7 +289,7 @@ namespace Xamarin.Auth
 		}
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Xamarin.Auth.AuthenticatorErrorEventArgs"/> class with an exception.
+		/// Initializes a new instance of the <see cref="Xamarin.Auth._MobileServices.AuthenticatorErrorEventArgs"/> class with an exception.
 		/// </summary>
 		/// <param name='exception'>
 		/// The exception signaling the error. The message of this object is retrieved from this exception or

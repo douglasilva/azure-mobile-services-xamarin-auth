@@ -17,7 +17,7 @@ using System;
 using NUnit.Framework;
 using System.Linq;
 
-namespace Xamarin.Auth.Test
+namespace Xamarin.Auth._MobileServices.Test
 {
 	[TestFixture]
 	public class AccountTest

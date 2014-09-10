@@ -28,7 +28,7 @@ using UIContext = Android.Content.Context;
 using AuthenticateUIType = System.Object;
 #endif
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	/// <summary>
 	/// An authenticator that presents a form to the user.
@@ -56,7 +56,7 @@ namespace Xamarin.Auth
 		public Uri CreateAccountLink { get; set; }
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Xamarin.Auth.FormAuthenticator"/> class
+		/// Initializes a new instance of the <see cref="Xamarin.Auth._MobileServices.FormAuthenticator"/> class
 		/// with the given link to create accounts.
 		/// </summary>
 		/// <param name='createAccountLink'>
@@ -185,7 +185,7 @@ namespace Xamarin.Auth
 		public FormAuthenticatorFieldType FieldType { get; set; }
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Xamarin.Auth.FormAuthenticatorField"/> class.
+		/// Initializes a new instance of the <see cref="Xamarin.Auth._MobileServices.FormAuthenticatorField"/> class.
 		/// </summary>
 		/// <param name='key'>
 		/// A key used to identify the field.
@@ -222,7 +222,7 @@ namespace Xamarin.Auth
 		}
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Xamarin.Auth.FormAuthenticatorField"/> class.
+		/// Initializes a new instance of the <see cref="Xamarin.Auth._MobileServices.FormAuthenticatorField"/> class.
 		/// </summary>
 		public FormAuthenticatorField ()
 		{

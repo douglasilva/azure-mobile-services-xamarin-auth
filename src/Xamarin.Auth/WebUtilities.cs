@@ -20,7 +20,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 #if XAMARIN_AUTH_INTERNAL
     internal static class WebUtilities

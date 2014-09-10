@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using NUnit.Framework;
-using Xamarin.Utilities;
+using Xamarin.Utilities._MobileServices;
 
-namespace Xamarin.Auth.Test
+namespace Xamarin.Auth._MobileServices.Test
 {
 	[TestFixture]
 	public class WebExTests

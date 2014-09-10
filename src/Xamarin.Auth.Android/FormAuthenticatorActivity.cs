@@ -23,9 +23,9 @@ using Android.App;
 using Android.OS;
 using Android.Widget;
 using Android.Util;
-using Xamarin.Utilities.Android;
+using Xamarin.Utilities._MobileServices.Android;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	[Activity (Label = "Web Authenticator")]
 #if XAMARIN_AUTH_INTERNAL

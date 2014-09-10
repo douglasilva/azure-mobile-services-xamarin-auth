@@ -21,10 +21,10 @@ using System.Threading.Tasks;
 using System.Linq;
 using System.Text;
 using System.Threading;
-using Xamarin.Auth;
-using Xamarin.Utilities;
+using Xamarin.Auth._MobileServices;
+using Xamarin.Utilities._MobileServices;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	/// <summary>
 	/// An HTTP web request that provides a convenient way to make authenticated
@@ -62,7 +62,7 @@ namespace Xamarin.Auth
 		public virtual Account Account { get; set; }
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Xamarin.Auth.Request"/> class.
+		/// Initializes a new instance of the <see cref="Xamarin.Auth._MobileServices.Request"/> class.
 		/// </summary>
 		/// <param name='method'>
 		/// The HTTP method.
@@ -328,7 +328,7 @@ namespace Xamarin.Auth
 		}
 
 		/// <summary>
-		/// Returns the <see cref="T:System.Net.HttpWebRequest"/> that will be used for this <see cref="T:Xamarin.Auth.Request"/>. All properties
+		/// Returns the <see cref="T:System.Net.HttpWebRequest"/> that will be used for this <see cref="T:Xamarin.Auth._MobileServices.Request"/>. All properties
 		/// should be set to their correct values before accessing this object.
 		/// </summary>
 		/// <remarks>

@@ -17,9 +17,9 @@ using System;
 using System.Threading.Tasks;
 using System.Net;
 using System.Collections.Generic;
-using Xamarin.Utilities;
+using Xamarin.Utilities._MobileServices;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	/// <summary>
 	/// Type of method used to fetch the username of an account
@@ -56,7 +56,7 @@ namespace Xamarin.Auth
 		string verifier;
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="Xamarin.Auth.OAuth1Authenticator"/> class.
+		/// Initializes a new instance of the <see cref="Xamarin.Auth._MobileServices.OAuth1Authenticator"/> class.
 		/// </summary>
 		/// <param name='consumerKey'>
 		/// Consumer key.

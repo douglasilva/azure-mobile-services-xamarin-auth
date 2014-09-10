@@ -17,11 +17,11 @@ using System;
 using System.Threading.Tasks;
 using System.Linq;
 using System.Collections.Generic;
-using Xamarin.Utilities;
+using Xamarin.Utilities._MobileServices;
 using System.Net;
 using System.Text;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	/// <summary>
 	/// Implements OAuth 2.0 implicit granting. http://tools.ietf.org/html/draft-ietf-oauth-v2-31#section-4.2
@@ -88,7 +88,7 @@ namespace Xamarin.Auth
 		}
 
 		/// <summary>
-		/// Initializes a new <see cref="Xamarin.Auth.OAuth2Authenticator"/>
+		/// Initializes a new <see cref="Xamarin.Auth._MobileServices.OAuth2Authenticator"/>
 		/// that authenticates using implicit granting (token).
 		/// </summary>
 		/// <param name='clientId'>
@@ -128,7 +128,7 @@ namespace Xamarin.Auth
 		}
 
 		/// <summary>
-		/// Initializes a new instance <see cref="Xamarin.Auth.OAuth2Authenticator"/>
+		/// Initializes a new instance <see cref="Xamarin.Auth._MobileServices.OAuth2Authenticator"/>
 		/// that authenticates using authorization codes (code).
 		/// </summary>
 		/// <param name='clientId'>
