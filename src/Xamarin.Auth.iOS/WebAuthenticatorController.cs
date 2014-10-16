@@ -15,10 +15,16 @@
 //
 using System;
 using System.Threading.Tasks;
-using MonoTouch.UIKit;
-using MonoTouch.Foundation;
 using Xamarin.Utilities._MobileServices.iOS;
 using Xamarin.Controls._MobileServices;
+
+#if __UNIFIED__
+using Foundation;
+using UIKit;
+#else
+using MonoTouch.Foundation;
+using MonoTouch.UIKit;
+#endif
 
 namespace Xamarin.Auth._MobileServices
 {
@@ -164,12 +170,15 @@ namespace Xamarin.Auth._MobileServices
 				(Action)BeginLoadingInitialUrl :
 				(Action)Cancel;
 
-			if (e.Exception != null) {
-				this.ShowError ("Authentication Error", e.Exception, after);
-			}
-			else {
-				this.ShowError ("Authentication Error", e.Message, after);
-			}
+			if (authenticator.ShowUIErrors) {
+				if (e.Exception != null) {
+					this.ShowError ("Authentication Error", e.Exception, after);
+				} else {
+					this.ShowError ("Authentication Error", e.Message, after);
+				}
+			} else {
+				after ();
+			}			
 		}
 
 		protected class WebViewDelegate : UIWebViewDelegate
