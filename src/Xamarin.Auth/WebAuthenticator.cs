@@ -107,9 +107,9 @@ namespace Xamarin.Auth._MobileServices
 			}
 #elif PLATFORM_ANDROID
             global::Android.Webkit.CookieSyncManager.CreateInstance(global::Android.App.Application.Context);
-			global::Android.Webkit.CookieManager.Instance.RemoveAllCookie ();
+            global::Android.Webkit.CookieManager.Instance.RemoveAllCookie();
 #endif
-		}
+        }
 
 		/// <summary>
 		/// Occurs when the visual, user-interactive, browsing has completed but there
