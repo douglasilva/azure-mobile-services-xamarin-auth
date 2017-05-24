@@ -39,7 +39,6 @@ namespace Xamarin.Auth._MobileServices
 #if XAMARIN_AUTH_INTERNAL
 	internal class OAuth1Authenticator 
         :
-        : 
         WebAuthenticator
         //WebRedirectAuthenticator  //mc++ why not WebRedirectAuthenticator??
 #else
