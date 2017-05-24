@@ -11,7 +11,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     [BroadcastReceiver]
     public class CustomTabsActionsBroadcastReceiver : BroadcastReceiver

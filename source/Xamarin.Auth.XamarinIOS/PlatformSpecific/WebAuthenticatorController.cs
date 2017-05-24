@@ -29,7 +29,7 @@ using UIKit;
 using WebKit;
 #endif
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     /// <summary>
     /// The ViewController that the WebAuthenticator presents to the user.

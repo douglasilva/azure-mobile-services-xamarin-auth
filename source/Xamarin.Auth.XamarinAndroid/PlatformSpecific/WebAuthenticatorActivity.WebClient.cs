@@ -23,7 +23,7 @@ using System.Threading.Tasks;
 using Xamarin.Utilities.Android;
 using System.Text;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     public partial class WebAuthenticatorActivity
     {

@@ -1,10 +1,10 @@
 ﻿using Android.Content;
 using Android.OS;
 
-using Xamarin.Auth;
-using Xamarin.Auth.Presenters.XamarinAndroid;
+using Xamarin.Auth._MobileServices;
+using Xamarin.Auth._MobileServices.Presenters.XamarinAndroid;
 
-namespace Xamarin.Auth.Presenters.XamarinAndroid
+namespace Xamarin.Auth._MobileServices.Presenters.XamarinAndroid
 {
     public static class AuthenticationConfiguration
     {

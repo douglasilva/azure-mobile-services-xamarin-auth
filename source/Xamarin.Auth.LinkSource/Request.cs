@@ -25,7 +25,7 @@ using System.Text;
 using System.Threading;
 using Xamarin.Utilities;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     /// <summary>
     /// An HTTP web request that provides a convenient way to make authenticated
@@ -271,7 +271,7 @@ namespace Xamarin.Auth
         }
 
         /// <summary>
-        /// Returns the <see cref="T:System.Net.HttpWebRequest"/> that will be used for this <see cref="T:Xamarin.Auth.Request"/>. All properties
+        /// Returns the <see cref="T:System.Net.HttpWebRequest"/> that will be used for this <see cref="T:Xamarin.Auth._MobileServices.Request"/>. All properties
         /// should be set to their correct values before accessing this object.
         /// </summary>
         /// <remarks>

@@ -36,7 +36,7 @@ using CoreFoundation;
 using UIKit;
 #endif
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     internal partial class KeyChainAccountStore
     {
@@ -83,7 +83,7 @@ namespace Xamarin.Auth
             catch (System.Exception exc)
             {
                 string msg = String.Format("Search/Find FindAccountsForServiceAsync {0}", exc.Message);
-                throw new Xamarin.Auth.AccountStoreException(msg, exc);
+                throw new Xamarin.Auth._MobileServices.AccountStoreException(msg, exc);
             }
 
             IEnumerable<Account> accounts_found = null;
@@ -97,14 +97,14 @@ namespace Xamarin.Auth
                         System.Linq.Enumerable.WhereSelectArrayIterator
                                                 <
                                                     MonoTouch.Security.SecRecord,
-                                                    Xamarin.Auth.Account
+                                                    Xamarin.Auth._MobileServices.Account
                                                 >
                     }    
                     {
                         System.Linq.Enumerable.WhereSelectArrayIterator
                                                 <
                                                     Security.SecRecord,
-                                                    Xamarin.Auth.Account
+                                                    Xamarin.Auth._MobileServices.Account
                                                 >
                     }    
                 */
@@ -155,7 +155,7 @@ namespace Xamarin.Auth
                 {
                     string msg = exc.Message;
                     Debug.WriteLine("IEnumerable access excption = " + msg);
-                    // throw new Xamarin.Auth.AccountStoreException("IEnumerable access excption = " + msg);
+                    // throw new Xamarin.Auth._MobileServices.AccountStoreException("IEnumerable access excption = " + msg);
                 }
             }
             else
@@ -197,7 +197,7 @@ namespace Xamarin.Auth
 			{
                 string msg = String.Format("GetAccountFromRecord error = {0}", exc.Message);
 				Debug.WriteLine(msg);
-				throw new Xamarin.Auth.AccountStoreException(msg);
+				throw new Xamarin.Auth._MobileServices.AccountStoreException(msg);
 			}
 
             return a;
@@ -222,7 +222,7 @@ namespace Xamarin.Auth
 			{
 				string msg = String.Format("FindAccount error = {0}", exc.Message);
 				Debug.WriteLine(msg);
-				throw new Xamarin.Auth.AccountStoreException(msg);
+				throw new Xamarin.Auth._MobileServices.AccountStoreException(msg);
 			}
 
             return a;
@@ -292,7 +292,7 @@ namespace Xamarin.Auth
                     sb.AppendLine(" File /+ New file /+ iOS /+ Entitlements.plist");
                     /*
                         Error: Could not save account to KeyChain -- iOS 10 #128
-                        https://github.com/xamarin/Xamarin.Auth/issues/128 
+                        https://github.com/xamarin/Xamarin.Auth._MobileServices/issues/128 
                         https://bugzilla.xamarin.com/show_bug.cgi?id=43514
 
                         sb.AppendLine("");
@@ -315,7 +315,7 @@ namespace Xamarin.Auth
 			{
 				string msg = String.Format("SaveAsync error = {0}", exc.Message);
 				Debug.WriteLine(msg);
-				throw new Xamarin.Auth.AccountStoreException(msg);
+				throw new Xamarin.Auth._MobileServices.AccountStoreException(msg);
 			}
 
 			return Task.FromResult(true);
@@ -340,7 +340,7 @@ namespace Xamarin.Auth
 			{
 				string msg = String.Format("DeleteAsync error = {0}", exc.Message);
 				Debug.WriteLine(msg);
-				throw new Xamarin.Auth.AccountStoreException(msg);
+				throw new Xamarin.Auth._MobileServices.AccountStoreException(msg);
 			}
 
 			return Task.FromResult(true);

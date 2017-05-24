@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     public enum HttpWebClientFrameworkType
     {

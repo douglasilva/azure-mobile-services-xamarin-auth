@@ -29,7 +29,7 @@ using Foundation;
 using Xamarin.Controls;
 using Xamarin.Utilities.iOS;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     internal class FormAuthenticatorController : UITableViewController
     {

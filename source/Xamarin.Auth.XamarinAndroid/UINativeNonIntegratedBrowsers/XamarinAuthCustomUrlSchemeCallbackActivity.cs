@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     [global::Android.App.Activity()]
     [

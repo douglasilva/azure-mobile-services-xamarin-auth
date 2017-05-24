@@ -16,7 +16,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	/// <summary>
 	/// A persistent storage for <see cref="Account"/>s. This storage is encrypted.

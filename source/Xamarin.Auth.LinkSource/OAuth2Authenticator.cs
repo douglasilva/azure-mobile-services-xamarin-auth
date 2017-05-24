@@ -23,7 +23,7 @@ using Xamarin.Utilities;
 using System.Net;
 using System.Text;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     /// <summary>
     /// Implements OAuth 2.0 implicit granting. http://tools.ietf.org/html/draft-ietf-oauth-v2-31#section-4.2

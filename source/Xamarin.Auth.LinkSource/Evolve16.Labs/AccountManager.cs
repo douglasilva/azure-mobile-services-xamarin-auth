@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Linq;
 
-using Xamarin.Auth;
-using Xamarin.Auth.Cryptography;
+using Xamarin.Auth._MobileServices;
+using Xamarin.Auth._MobileServices.Cryptography;
 
-namespace Xamarin.Auth.AccountUtilities
+namespace Xamarin.Auth._MobileServices.AccountUtilities
 {
     /// <summary>
     /// Account manager.

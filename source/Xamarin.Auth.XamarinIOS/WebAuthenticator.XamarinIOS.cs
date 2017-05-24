@@ -24,7 +24,7 @@ using AuthenticateUIType =
             ;
 using System.Text;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     /// <summary>
     /// An authenticator that displays a web page.

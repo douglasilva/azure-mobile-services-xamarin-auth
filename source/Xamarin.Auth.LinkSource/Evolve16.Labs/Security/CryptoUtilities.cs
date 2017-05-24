@@ -3,7 +3,7 @@ using System.Text;
 
 using PCLCrypto;
 
-namespace Xamarin.Auth.Cryptography
+namespace Xamarin.Auth._MobileServices.Cryptography
 {
     public static class CryptoUtilities
     {

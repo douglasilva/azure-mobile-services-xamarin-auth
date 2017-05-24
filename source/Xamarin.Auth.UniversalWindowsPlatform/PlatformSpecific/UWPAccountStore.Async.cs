@@ -26,7 +26,7 @@ using System.Threading.Tasks;
 using Windows.Security.Cryptography;
 using Windows.Storage;
 
-namespace Xamarin.Auth.WindowsUWP
+namespace Xamarin.Auth._MobileServices.WindowsUWP
 {
     internal partial class UWPAccountStore
     {

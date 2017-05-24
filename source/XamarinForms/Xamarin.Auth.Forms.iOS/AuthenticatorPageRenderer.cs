@@ -6,11 +6,11 @@ using Xamarin.Forms.Platform.iOS;
 [assembly:
     ExportRenderer
         (
-            typeof(Xamarin.Auth.XamarinForms.AuthenticatorPage),
-            typeof(Xamarin.Auth.XamarinForms.XamarinIOS.AuthenticatorPageRenderer)
+            typeof(Xamarin.Auth._MobileServices.XamarinForms.AuthenticatorPage),
+            typeof(Xamarin.Auth._MobileServices.XamarinForms.XamarinIOS.AuthenticatorPageRenderer)
         )
 ]
-namespace Xamarin.Auth.XamarinForms.XamarinIOS
+namespace Xamarin.Auth._MobileServices.XamarinForms.XamarinIOS
 {
     [Preserve(AllMembers = true)]
     public class AuthenticatorPageRenderer : Xamarin.Forms.Platform.iOS.PageRenderer

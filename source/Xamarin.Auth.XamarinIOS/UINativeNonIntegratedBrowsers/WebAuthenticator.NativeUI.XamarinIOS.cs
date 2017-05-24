@@ -5,7 +5,7 @@ using AuthenticateUIType =
             //System.Object
             ;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     public partial class WebAuthenticator
     {

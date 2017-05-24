@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     /// <summary>
     /// Web view configuration.
@@ -10,7 +10,7 @@ namespace Xamarin.Auth
         public static class IOS
         {
             /// <summary>
-            /// Gets or sets a value indicating whether this <see cref="T:Xamarin.Auth.WebAuthenticatorController"/> 
+            /// Gets or sets a value indicating whether this <see cref="T:Xamarin.Auth._MobileServices.WebAuthenticatorController"/> 
             /// is using WKWebView or by default UIWebView
             /// </summary>
             /// <value><c>true</c> if is using WKW eb view; otherwise, <c>false</c>.</value>

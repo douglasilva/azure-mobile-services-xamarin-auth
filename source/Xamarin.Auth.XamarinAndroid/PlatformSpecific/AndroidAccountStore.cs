@@ -24,7 +24,7 @@ using Java.Security;
 using Javax.Security.Auth.Callback;
 using Javax.Crypto;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     /// <summary>
     /// AccountStore that uses a KeyStore of PrivateKeys protected by a fixed password

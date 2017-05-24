@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using System.Collections.Generic;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	public static class OAuth2AuthenticatorExtensions
 	{

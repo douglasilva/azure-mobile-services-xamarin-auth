@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Xamarin.Auth.XamarinForms
+namespace Xamarin.Auth._MobileServices.XamarinForms
 {
     public sealed class PreserveAttribute : System.Attribute
     {

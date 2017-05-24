@@ -1,4 +1,4 @@
-﻿namespace Xamarin.Auth.Presenters.XamarinIOS
+﻿namespace Xamarin.Auth._MobileServices.Presenters.XamarinIOS
 {
 	public class PlatformOAuthLoginPresenter
 	{

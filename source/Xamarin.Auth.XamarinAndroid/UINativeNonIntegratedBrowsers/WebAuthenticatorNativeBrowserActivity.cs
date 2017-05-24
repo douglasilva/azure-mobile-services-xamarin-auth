@@ -30,7 +30,7 @@ using System.Linq;
 using Plugin.Threading;
 using Android.Widget;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     [Activity
         (

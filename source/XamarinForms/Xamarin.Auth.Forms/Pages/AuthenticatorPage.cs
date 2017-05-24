@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Xamarin.Forms;
 using System.Text;
 
-namespace Xamarin.Auth.XamarinForms
+namespace Xamarin.Auth._MobileServices.XamarinForms
 {
     [Preserve(AllMembers = true)]
     public class AuthenticatorPage : ContentPage

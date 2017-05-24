@@ -21,7 +21,7 @@ using System.Text;
 
 using Xamarin.Utilities;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     /// <summary>
     /// Type of method used to fetch the username of an account
@@ -137,7 +137,7 @@ namespace Xamarin.Auth
 
             this.getUsernameAsync = getUsernameAsync;
 
-            this.HttpWebClientFrameworkType = Auth.HttpWebClientFrameworkType.WebRequest;
+            this.HttpWebClientFrameworkType = Auth._MobileServices.HttpWebClientFrameworkType.WebRequest;
 
             #if DEBUG
             StringBuilder sb = new StringBuilder();

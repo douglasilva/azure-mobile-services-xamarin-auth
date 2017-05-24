@@ -19,7 +19,7 @@ using System.Threading.Tasks;
 using Windows.Security.Cryptography.DataProtection;
 using Windows.Storage.Streams;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     internal static class DataProtectionExtensions
     {

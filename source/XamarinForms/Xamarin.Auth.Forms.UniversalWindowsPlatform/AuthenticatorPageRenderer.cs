@@ -7,15 +7,15 @@ using Xamarin.Forms.Platform.UWP;
 [assembly:
     ExportRenderer
         (
-            typeof(Xamarin.Auth.XamarinForms.AuthenticatorPage),
-            typeof(Xamarin.Auth.XamarinForms.UniversalWindowsPlatform.AuthenticatorPageRenderer)
+            typeof(Xamarin.Auth._MobileServices.XamarinForms.AuthenticatorPage),
+            typeof(Xamarin.Auth._MobileServices.XamarinForms.UniversalWindowsPlatform.AuthenticatorPageRenderer)
         )
 ]
-namespace Xamarin.Auth.XamarinForms.UniversalWindowsPlatform
+namespace Xamarin.Auth._MobileServices.XamarinForms.UniversalWindowsPlatform
 {
     public class AuthenticatorPageRenderer : Xamarin.Forms.Platform.UWP.PageRenderer
     {
-        private Xamarin.Auth.Authenticator authenticator;
+        private Xamarin.Auth._MobileServices.Authenticator authenticator;
         private Windows.UI.Xaml.Controls.Frame frame;
 
         protected override void Dispose(bool disposing)
@@ -43,7 +43,7 @@ namespace Xamarin.Auth.XamarinForms.UniversalWindowsPlatform
             }
             catch (Exception ex)
             {
-                throw new Xamarin.Auth.AuthException("UWP Dispose");
+                throw new Xamarin.Auth._MobileServices.AuthException("UWP Dispose");
             }
 
             base.Dispose(disposing);
@@ -110,7 +110,7 @@ namespace Xamarin.Auth.XamarinForms.UniversalWindowsPlatform
             }
             catch (Exception ex)
             {
-                throw new Xamarin.Auth.AuthException("UWP OnElementChanged");
+                throw new Xamarin.Auth._MobileServices.AuthException("UWP OnElementChanged");
             }
 
             return;

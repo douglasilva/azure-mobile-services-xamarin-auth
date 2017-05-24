@@ -23,7 +23,7 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 #endif
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     /// <summary>
     /// An Account that represents an authenticated user of a social network.

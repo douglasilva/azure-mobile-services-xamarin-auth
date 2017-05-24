@@ -24,7 +24,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Utilities;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	/// <summary>
 	/// An HTTP web response.

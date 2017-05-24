@@ -2,7 +2,7 @@
 
 using AuthenticateUIType = System.Object;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     /// <summary>
     /// Web authenticator.
@@ -16,7 +16,7 @@ namespace Xamarin.Auth
     public partial class WebAuthenticator
     {
         /// <summary>
-        /// Gets or sets a value indicating whether this <see cref="T:Xamarin.Auth.WebAuthenticator"/> 
+        /// Gets or sets a value indicating whether this <see cref="T:Xamarin.Auth._MobileServices.WebAuthenticator"/> 
         /// is using native user interface.
         /// </summary>
         /// <value><c>true</c> if is using native user interface; otherwise, <c>false</c>.</value>

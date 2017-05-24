@@ -19,7 +19,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Xamarin.Utilities;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     /// <summary>
     /// An authenticator that displays web pages until a given "redirect" page is encountered. It then
@@ -213,7 +213,7 @@ namespace Xamarin.Auth
         }
 
         /// <summary>
-        /// Sets a value indicating whether this <see cref="T:Xamarin.Auth.WebRedirectAuthenticator"/> 
+        /// Sets a value indicating whether this <see cref="T:Xamarin.Auth._MobileServices.WebRedirectAuthenticator"/> 
         /// is loadabl redirect URI.
         /// 
         /// localhost, 127.0.0.1 and ::1 hosts will not be loadable

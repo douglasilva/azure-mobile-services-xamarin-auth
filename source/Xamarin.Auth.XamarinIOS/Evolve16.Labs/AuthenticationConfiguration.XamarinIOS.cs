@@ -1,7 +1,7 @@
-﻿using Xamarin.Auth;
-using Xamarin.Auth.Presenters;
+﻿using Xamarin.Auth._MobileServices;
+using Xamarin.Auth._MobileServices.Presenters;
 
-namespace Xamarin.Auth.Presenters.XamarinIOS
+namespace Xamarin.Auth._MobileServices.Presenters.XamarinIOS
 {
     public static class AuthenticationConfiguration
     {

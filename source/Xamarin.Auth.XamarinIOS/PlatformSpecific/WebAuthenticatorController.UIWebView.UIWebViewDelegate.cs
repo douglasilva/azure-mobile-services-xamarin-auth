@@ -29,7 +29,7 @@ using UIKit;
 using WebKit;
 #endif
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     internal partial class WebAuthenticatorController
     {

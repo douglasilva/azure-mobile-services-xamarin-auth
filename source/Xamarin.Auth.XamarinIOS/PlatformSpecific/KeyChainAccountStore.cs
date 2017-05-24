@@ -31,7 +31,7 @@ using Foundation;
 using ObjCRuntime;
 #endif
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     internal partial class KeyChainAccountStore : AccountStore
     {

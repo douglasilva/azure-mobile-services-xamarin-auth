@@ -19,9 +19,8 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Net;
 using System.Collections.Generic;
-using Xamarin.Auth;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     /// <summary>
     /// Request that is authenticated using an account retrieved from an <see cref="OAuth1Authenticator"/>.

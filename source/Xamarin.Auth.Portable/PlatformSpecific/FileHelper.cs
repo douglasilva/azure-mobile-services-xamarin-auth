@@ -1,6 +1,6 @@
 using System;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     public static class FileHelper
 	{

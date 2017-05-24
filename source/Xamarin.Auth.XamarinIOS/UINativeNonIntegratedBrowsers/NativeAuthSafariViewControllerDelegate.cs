@@ -4,7 +4,7 @@ using Foundation;
 using UIKit;
 using SafariServices;
 
-namespace Xamarin.Auth//.SafariServices
+namespace Xamarin.Auth._MobileServices//.SafariServices
 {
 	public partial class NativeAuthSafariViewControllerDelegate 
         :

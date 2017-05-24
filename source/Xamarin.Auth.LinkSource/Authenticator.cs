@@ -42,7 +42,7 @@ using AuthenticateUIType = System.Object;
 using AuthenticateUIType = System.Object;
 #endif
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     /// <summary>
     /// A process and user interface to authenticate a user.

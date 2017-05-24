@@ -6,7 +6,7 @@ using Android.Support.CustomTabs;
 using Android.Support.CustomTabs.Chromium.SharedUtilities;
 using Android.Content;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     /// <summary>
     /// Custom tabs configuration needed to pass Custom Tabs data for customization to the 

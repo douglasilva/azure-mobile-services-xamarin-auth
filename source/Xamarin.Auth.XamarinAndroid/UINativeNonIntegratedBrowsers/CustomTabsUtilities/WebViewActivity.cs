@@ -17,7 +17,7 @@ using Android.OS;
 using Android.Views;
 using Android.Webkit;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	/// <summary>
 	/// This Activity is used as a fallback when there is no browser installed that supports

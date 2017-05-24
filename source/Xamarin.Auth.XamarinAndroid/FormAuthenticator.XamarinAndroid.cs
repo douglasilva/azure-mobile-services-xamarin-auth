@@ -28,7 +28,7 @@ using UIContext =
             //Android.App.Activity
             ;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
 	/// <summary>
 	/// An authenticator that presents a form to the user.

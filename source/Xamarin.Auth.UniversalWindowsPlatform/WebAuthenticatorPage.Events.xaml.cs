@@ -13,7 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace Xamarin.Auth
+namespace Xamarin.Auth._MobileServices
 {
     public sealed partial class WebAuthenticatorPage
     {
@@ -74,7 +74,7 @@ namespace Xamarin.Auth
 
         private void auth_Error(object sender, AuthenticatorErrorEventArgs e)
         {
-            throw new Xamarin.Auth.AuthException("Auth Error");
+            throw new Xamarin.Auth._MobileServices.AuthException("Auth Error");
         }
 
         private async void auth_Completed(object sender, AuthenticatorCompletedEventArgs e)

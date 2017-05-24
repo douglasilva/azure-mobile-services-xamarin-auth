@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Xamarin.Auth.Presenters
+namespace Xamarin.Auth._MobileServices.Presenters
 {
     public class OAuthLoginPresenter
     {
@@ -15,7 +15,7 @@ namespace Xamarin.Auth.Presenters
             PlatformLogin(authenticator);
         }
 
-        void OnAuthCompleted(object sender, global::Xamarin.Auth.AuthenticatorCompletedEventArgs e)
+        void OnAuthCompleted(object sender, global::Xamarin.Auth._MobileServices.AuthenticatorCompletedEventArgs e)
         {
             if (Completed != null)
             {

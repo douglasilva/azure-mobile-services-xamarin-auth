@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Xamarin.Auth.XamarinForms
+namespace Xamarin.Auth._MobileServices.XamarinForms
 {
     public interface IEmbeddedWebViewConfiguration
     {
