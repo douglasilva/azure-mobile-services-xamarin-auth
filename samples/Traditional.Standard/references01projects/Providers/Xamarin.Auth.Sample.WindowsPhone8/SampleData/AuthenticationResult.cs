@@ -1,5 +1,5 @@
 using System;
-using Xamarin.Auth.Helpers;
+using Xamarin.Auth._MobileServices.Helpers;
 
 namespace Xamarin.Auth
 {

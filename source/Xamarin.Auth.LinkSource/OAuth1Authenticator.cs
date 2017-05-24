@@ -19,7 +19,7 @@ using System.Net;
 using System.Collections.Generic;
 using System.Text;
 
-using Xamarin.Utilities;
+using Xamarin.Utilities._MobileServices;
 
 namespace Xamarin.Auth._MobileServices
 {
@@ -65,7 +65,7 @@ namespace Xamarin.Auth._MobileServices
         string verifier;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Xamarin.Auth.OAuth1Authenticator"/> class.
+        /// Initializes a new instance of the <see cref="Xamarin.Auth._MobileServices.OAuth1Authenticator"/> class.
         /// </summary>
         /// <param name='consumerKey'>
         /// Consumer key.

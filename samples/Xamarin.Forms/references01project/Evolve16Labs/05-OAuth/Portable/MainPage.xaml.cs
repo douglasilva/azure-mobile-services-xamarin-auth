@@ -7,7 +7,7 @@ using Newtonsoft.Json.Linq;
 using System.Threading.Tasks;
 using ComicBookPCL;
 using System.Text;
-using Xamarin.Auth.XamarinForms;
+using Xamarin.Auth._MobileServices.XamarinForms;
 
 namespace ComicBook
 {
@@ -73,13 +73,13 @@ namespace ComicBook
             if (forms_implementation_renderers)
             {
                 // Renderers Implementaion
-                //Navigation.PushModalAsync(new Xamarin.Auth.XamarinForms.AuthenticatorPage());
+                //Navigation.PushModalAsync(new Xamarin.Auth._MobileServices.XamarinForms.AuthenticatorPage());
             }
             else
             {
                 // Presenters Implementation
-                Xamarin.Auth.Presenters.OAuthLoginPresenter presenter = null;
-                presenter = new Xamarin.Auth.Presenters.OAuthLoginPresenter();
+                Xamarin.Auth._MobileServices.Presenters.OAuthLoginPresenter presenter = null;
+                presenter = new Xamarin.Auth._MobileServices.Presenters.OAuthLoginPresenter();
                 presenter.Login(authenticator);
             }
 
@@ -108,13 +108,13 @@ namespace ComicBook
             if (forms_implementation_renderers)
             {
                 // Renderers Implementaion
-                //Navigation.PushModalAsync(new Xamarin.Auth.XamarinForms.AuthenticatorPage());
+                //Navigation.PushModalAsync(new Xamarin.Auth._MobileServices.XamarinForms.AuthenticatorPage());
             }
             else
             {
                 // Presenters Implementation
-                Xamarin.Auth.Presenters.OAuthLoginPresenter presenter = null;
-                presenter = new Xamarin.Auth.Presenters.OAuthLoginPresenter();
+                Xamarin.Auth._MobileServices.Presenters.OAuthLoginPresenter presenter = null;
+                presenter = new Xamarin.Auth._MobileServices.Presenters.OAuthLoginPresenter();
                 presenter.Login(authenticator);
             }
 
@@ -352,12 +352,12 @@ namespace ComicBook
             return;
         }
 
-        Xamarin.Auth.OAuth2Authenticator authenticator = null;
+        Xamarin.Auth._MobileServices.OAuth2Authenticator authenticator = null;
 
         protected void ButtonGoogle_Clicked(object sender, EventArgs e)
         {
             authenticator
-                 = new Xamarin.Auth.OAuth2Authenticator
+                 = new Xamarin.Auth._MobileServices.OAuth2Authenticator
                  (
                      clientId:
                          new Func<string>
@@ -485,13 +485,13 @@ namespace ComicBook
             if (forms_implementation_renderers)
             {
                 // Renderers Implementaion
-                Navigation.PushModalAsync(new Xamarin.Auth.XamarinForms.AuthenticatorPage());
+                Navigation.PushModalAsync(new Xamarin.Auth._MobileServices.XamarinForms.AuthenticatorPage());
             }
             else
             {
                 // Presenters Implementation
-                Xamarin.Auth.Presenters.OAuthLoginPresenter presenter = null;
-                presenter = new Xamarin.Auth.Presenters.OAuthLoginPresenter();
+                Xamarin.Auth._MobileServices.Presenters.OAuthLoginPresenter presenter = null;
+                presenter = new Xamarin.Auth._MobileServices.Presenters.OAuthLoginPresenter();
                 presenter.Login(authenticator);
             }
 

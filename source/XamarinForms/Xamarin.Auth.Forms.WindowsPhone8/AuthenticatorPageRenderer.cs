@@ -7,16 +7,16 @@ using Xamarin.Forms.Platform.WinPhone;
 [assembly:
     ExportRenderer
         (
-            typeof(Xamarin.Auth.XamarinForms.AuthenticatorPage),
-            typeof(Xamarin.Auth.XamarinForms.WindowsPhone8.AuthenticatorPageRenderer)
+            typeof(Xamarin.Auth._MobileServices.XamarinForms.AuthenticatorPage),
+            typeof(Xamarin.Auth._MobileServices.XamarinForms.WindowsPhone8.AuthenticatorPageRenderer)
         )
 ]
-namespace Xamarin.Auth.XamarinForms.WindowsPhone8
+namespace Xamarin.Auth._MobileServices.XamarinForms.WindowsPhone8
 {
     public class AuthenticatorPageRenderer : Xamarin.Forms.Platform.WinPhone.PageRenderer
     {
-        protected Xamarin.Auth.Authenticator Authenticator = null;
-        protected Xamarin.Auth.XamarinForms.AuthenticatorPage authenticator_page = null;
+        protected Xamarin.Auth._MobileServices.Authenticator Authenticator = null;
+        protected Xamarin.Auth._MobileServices.XamarinForms.AuthenticatorPage authenticator_page = null;
 
         protected override async void OnElementChanged(ElementChangedEventArgs<Xamarin.Forms.Page> e)
         {
@@ -62,7 +62,7 @@ namespace Xamarin.Auth.XamarinForms.WindowsPhone8
             }
             catch (Exception ex)
             {
-                throw new Xamarin.Auth.AuthException("WindowsPhone OnElementChanged");
+                throw new Xamarin.Auth._MobileServices.AuthException("WindowsPhone OnElementChanged");
             }
 
             return;

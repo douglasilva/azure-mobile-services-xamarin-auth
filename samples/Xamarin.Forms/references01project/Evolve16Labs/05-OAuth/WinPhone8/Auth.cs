@@ -1,5 +1,5 @@
 ﻿using Xamarin.Auth;
-using Xamarin.Auth.Presenters;
+using Xamarin.Auth._MobileServices.Presenters;
 
 namespace Xamarin.Auth
 {

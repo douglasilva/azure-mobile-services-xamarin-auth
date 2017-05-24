@@ -17,7 +17,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Threading;
-using Xamarin.Utilities;
+using Xamarin.Utilities._MobileServices;
 
 using System.Linq;
 
@@ -105,7 +105,7 @@ namespace Xamarin.Auth._MobileServices
         #endregion
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Xamarin.Auth.Authenticator"/> class.
+        /// Initializes a new instance of the <see cref="Xamarin.Auth._MobileServices.Authenticator"/> class.
         /// </summary>
         public Authenticator()
         {
@@ -205,7 +205,7 @@ namespace Xamarin.Auth._MobileServices
                     }
                     else
                     {
-                        msg = "No subscribers to Xamarin.Auth.Authenticator.Completed (OnCompleted) event";
+                        msg = "No subscribers to Xamarin.Auth._MobileServices.Authenticator.Completed (OnCompleted) event";
                         System.Diagnostics.Debug.WriteLine(msg);
                     }
                 }

@@ -20,7 +20,7 @@ using Android.Net.Http;
 using Android.Webkit;
 using Android.OS;
 using System.Threading.Tasks;
-using Xamarin.Utilities.Android;
+using Xamarin.Utilities._MobileServices.Android;
 using System.Text;
 
 namespace Xamarin.Auth._MobileServices
@@ -54,7 +54,7 @@ namespace Xamarin.Auth._MobileServices
                 activity.state.Authenticator.Scheme = scheme;
 
                 StringBuilder sb = new StringBuilder();
-                sb.Append("Xamarin.Auth.Android.WebAuthenticatorActivity").AppendLine("");
+                sb.Append("Xamarin.Auth._MobileServices.Android.WebAuthenticatorActivity").AppendLine("");
                 sb.Append("             Scheme = ").AppendLine(scheme);
                 sb.Append("             Host   = ").AppendLine(host);
                 System.Diagnostics.Debug.WriteLine(sb.ToString());
