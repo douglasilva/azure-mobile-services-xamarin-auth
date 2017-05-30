@@ -204,17 +204,6 @@ namespace Xamarin.Auth._MobileServices
 
         protected void CloseCustomTabs()
         {
-            //UIThreadRunInvoker ri = new UIThreadRunInvoker(this);
-            //ri.BeginInvokeOnUIThread
-            //        (
-            //            () =>
-            //            {
-            //                StringBuilder sb1 = new StringBuilder();
-            //                sb1.AppendLine($"If CustomTabs Login Screen does not close automatically");
-            //                sb1.AppendLine($"close CustomTabs by navigating back to the app.");
-            //                Toast.MakeText(this, sb1.ToString(), ToastLength.Short).Show();
-            //            }
-            //        );
             
             #if DEBUG
             StringBuilder sb = new StringBuilder();
