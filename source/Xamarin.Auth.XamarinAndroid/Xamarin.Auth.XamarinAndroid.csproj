@@ -234,7 +234,6 @@
       <DependentUpon>AndroidAccountStore.cs</DependentUpon>
     </Compile>
     <Compile Include="UINativeNonIntegratedBrowsers\WebAuthenticator.NativeUI.XamarinAndroid.cs" />
-    <Compile Include="UINativeNonIntegratedBrowsers\XamarinAuthCustomUrlSchemeCallbackActivity.cs" />
     <Compile Include="UINativeNonIntegratedBrowsers\CustomTabsUtilities\CustomTabActivityHelper.cs" />
     <Compile Include="UINativeNonIntegratedBrowsers\CustomTabsUtilities\PackageManagerHelper.cs" />
     <Compile Include="UINativeNonIntegratedBrowsers\CustomTabsUtilities\IConnectionCallback.cs" />
