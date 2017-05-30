@@ -46,21 +46,6 @@ namespace Xamarin.Auth._MobileServices
             AuthenticateUIType ui = null;
             if (this.IsUsingNativeUI == true)
             {
-                Uri uri = GetInitialUrlAsync().Result;
-                IDictionary<string, string> query_parts = Utilities._MobileServices.WebEx.FormDecode(uri.Query);
-                Uri redirect_uri = new Uri(query_parts["redirect_uri"]);
-                string scheme = redirect_uri.Scheme;
-                if (scheme.StartsWith("http", StringComparison.InvariantCultureIgnoreCase))
-                {
-                    StringBuilder sb = new StringBuilder();
-                    sb.AppendLine("WARNING");
-                    sb.AppendLine($"Scheme = {scheme}");
-                    sb.AppendLine($"Native UI used with http[s] schema!");
-                    sb.AppendLine($"Redirect URL will be loaded in Native UI!");
-                    sb.AppendLine($"OAuth Data parsing might fail!");
-
-                    ShowErrorForNativeUI(sb.ToString());
-                }
                 ui = GetPlatformUINative();
             }
             else

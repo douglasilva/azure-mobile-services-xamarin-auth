@@ -190,7 +190,7 @@ namespace Xamarin.Auth._MobileServices
                         )
             : this(redirectUrl)
         {
-            this.is_using_native_ui = isUsingNativeUI;
+            this.IsUsingNativeUI = isUsingNativeUI;
 
             if (string.IsNullOrEmpty(clientId))
             {
@@ -276,7 +276,7 @@ namespace Xamarin.Auth._MobileServices
                         )
             : this(redirectUrl, clientSecret, accessTokenUrl)
         {
-            this.is_using_native_ui = isUsingNativeUI;
+            this.IsUsingNativeUI = isUsingNativeUI;
 
             if (string.IsNullOrEmpty(clientId))
             {
@@ -338,7 +338,7 @@ namespace Xamarin.Auth._MobileServices
                         )
             : base(redirectUrl, redirectUrl)
         {
-            this.is_using_native_ui = isUsingNativeUI;
+            this.IsUsingNativeUI = isUsingNativeUI;
 
             if (redirectUrl == null)
             {
