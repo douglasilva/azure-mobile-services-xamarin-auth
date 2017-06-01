@@ -35,7 +35,6 @@ namespace Xamarin.Auth._MobileServices
     [Activity
         (
             Label = "Web Authenticator Native Broswer",
-            NoHistory = true,
             LaunchMode = global::Android.Content.PM.LaunchMode.SingleTop
         )
     ]
@@ -129,75 +128,18 @@ namespace Xamarin.Auth._MobileServices
             CustomTabsConfiguration.UICustomization();
             //.......................................................
             // Launching CustomTabs and url - minimal
-            if
+            CustomTabsConfiguration
+                .CustomTabActivityHelper
+                .LaunchUrlWithCustomTabsOrFallback
                 (
-                    CustomTabsConfiguration.CustomTabActivityHelper != null
-                    &&
-                    CustomTabsConfiguration.CustomTabsIntent != null
-                    &&
-                    CustomTabsConfiguration.UriAndroidOS != null
-                )
-            {
-                CustomTabsConfiguration.CustomTabsIntent
-                    .Intent.AddFlags
-                                (
-                                    global::Android.Content.ActivityFlags.NoHistory
-                                    |
-                                    global::Android.Content.ActivityFlags.SingleTop
-                                    |
-                                    global::Android.Content.ActivityFlags.NewTask
-                                );
-
-                CustomTabsConfiguration
-                    .CustomTabActivityHelper
-                        .LaunchUrlWithCustomTabsOrFallback
-                            (
-                                // Activity/Context
-                                this,
-                                // CustomTabIntent
-                                CustomTabsConfiguration.CustomTabsIntent,
-                                CustomTabsConfiguration.UriAndroidOS,
-                                //  Fallback if CustomTabs do not exist
-                                CustomTabsConfiguration.WebViewFallback
-                            );
-            }
-            else
-            {
-                // plain CustomTabs no customizations
-                CustomTabsIntent i = new CustomTabsIntent.Builder().Build();
-                i.Intent.AddFlags
-                            (
-                                global::Android.Content.ActivityFlags.NoHistory
-                                |
-                                global::Android.Content.ActivityFlags.SingleTop
-                                |
-                                global::Android.Content.ActivityFlags.NewTask
-                            );
-                i.LaunchUrl(this, CustomTabsConfiguration.UriAndroidOS);
-            }
-            //.......................................................
-            // Launching CustomTabs and url - if WarmUp and Prefetching is used
-            /*
-            */
-            //---------------------------------------------------------------------------------
-
-            //
-            // Restore the UI state or start over
-            //
-            /*
-            if (savedInstanceState != null)
-            {
-                //webView.RestoreState(savedInstanceState);
-            }
-            else
-            {
-                if (Intent.GetBooleanExtra("ClearCookies", true))
-                {
-                    WebAuthenticator.ClearCookies();
-                }
-                BeginLoadingInitialUrl();
-            }
-            */
+                    // Activity/Context
+                    this,
+                    // CustomTabIntent
+                    CustomTabsConfiguration.CustomTabsIntent,
+                    CustomTabsConfiguration.UriAndroidOS,
+                    //  Fallback if CustomTabs do not exist
+                    CustomTabsConfiguration.WebViewFallback
+                );
 
             return;
         }
@@ -248,55 +190,23 @@ namespace Xamarin.Auth._MobileServices
         }
 
 
+        private bool customTabsShown = false;
 
+        protected override void OnPause()
+        {
+            base.OnPause();
+            customTabsShown = true;
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-        #region
-        ///-------------------------------------------------------------------------------------------------
-        /// Pull Request - manually added/fixed
-        ///		Added IsAuthenticated check #88
-        ///		https://github.com/xamarin/Xamarin.Auth/pull/88
         protected override void OnResume()
         {
             base.OnResume();
-            if (state.Authenticator.AllowCancel && state.Authenticator.IsAuthenticated())
+            if (state.Authenticator.AllowCancel && customTabsShown)
             {
                 state.Authenticator.OnCancelled();
             }
-
-            this.Finish();
-
-            return;
+            customTabsShown = false;
         }
-        ///-------------------------------------------------------------------------------------------------
-        #endregion
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         void BeginLoadingInitialUrl()
