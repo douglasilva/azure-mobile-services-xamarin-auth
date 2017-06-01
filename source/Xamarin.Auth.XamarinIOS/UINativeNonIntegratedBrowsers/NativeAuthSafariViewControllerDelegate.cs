@@ -34,7 +34,10 @@ namespace Xamarin.Auth._MobileServices//.SafariServices
 
 		public override void DidFinish(SFSafariViewController controller)
         {
-			return;
+            if (authenticator.AllowCancel)
+            {
+                authenticator.OnCancelled();
+            }
 		}
 
 		public override UIActivity[] GetActivityItems(SFSafariViewController controller, NSUrl url, string title)

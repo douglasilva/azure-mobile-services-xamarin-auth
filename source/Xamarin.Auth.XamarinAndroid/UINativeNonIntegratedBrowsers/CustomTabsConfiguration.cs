@@ -342,20 +342,6 @@ namespace Xamarin.Auth._MobileServices
                                             );
             }
 
-            //------------------------------------------------------------
-            //  CustomTabsIntent property getter will call 
-            //      CustomTabsIntent.Builder.Build() internally
-            CustomTabsIntent
-                .Intent.AddFlags
-                        (
-                            global::Android.Content.ActivityFlags.NoHistory
-                            |
-                            global::Android.Content.ActivityFlags.SingleTop
-                            |
-                            global::Android.Content.ActivityFlags.NewTask
-                        )
-                ;
-
             return;
         }
 
