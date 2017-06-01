@@ -190,22 +190,22 @@ namespace Xamarin.Auth._MobileServices
         }
 
 
-        private bool customTabsShowen = false;
+        private bool customTabsShown = false;
 
         protected override void OnPause()
         {
             base.OnPause();
-            customTabsShowen = true;
+            customTabsShown = true;
         }
 
         protected override void OnResume()
         {
             base.OnResume();
-            if (state.Authenticator.AllowCancel && customTabsShowen)
+            if (state.Authenticator.AllowCancel && customTabsShown)
             {
                 state.Authenticator.OnCancelled();
             }
-            customTabsShowen = false;
+            customTabsShown = false;
         }
 
 
