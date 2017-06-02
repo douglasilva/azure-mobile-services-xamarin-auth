@@ -186,9 +186,9 @@ namespace Xamarin.Auth._MobileServices
 
         public static WebViewFallback WebViewFallback
         {
-        	get;
-        	set;
-        }
+            get;
+            set;
+        } = new WebViewFallback();
 
 
 
