@@ -2,7 +2,7 @@
 
 using Android.App;
 
-namespace Android.Support.CustomTabs.Chromium.SharedUtilities
+namespace Android.Support.CustomTabs.Chromium.SharedUtilities._MobileServices
 {
 	/// <summary>
 	/// To be used as a fallback to open the Uri when Custom Tabs is not available.

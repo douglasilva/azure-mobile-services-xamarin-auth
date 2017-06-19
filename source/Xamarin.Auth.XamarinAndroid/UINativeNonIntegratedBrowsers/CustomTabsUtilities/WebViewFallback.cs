@@ -16,7 +16,7 @@ using Android.App;
 using Android.Content;
 using Android.Net;
 
-namespace Android.Support.CustomTabs.Chromium.SharedUtilities
+namespace Android.Support.CustomTabs.Chromium.SharedUtilities._MobileServices
 {
 
 	/// <summary>
