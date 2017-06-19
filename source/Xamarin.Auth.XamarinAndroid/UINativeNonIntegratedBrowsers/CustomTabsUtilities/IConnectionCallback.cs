@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Android.Support.CustomTabs.Chromium.SharedUtilities
+namespace Android.Support.CustomTabs.Chromium.SharedUtilities._MobileServices
 {
 	/// <summary>
 	/// A Callback for when the service is connected or disconnected. Use those callbacks to

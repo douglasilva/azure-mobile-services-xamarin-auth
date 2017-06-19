@@ -26,7 +26,7 @@ using MonoTouch.Foundation;
 using UIKit;
 using Foundation;
 #endif
-using Xamarin.Controls;
+using Xamarin.Controls._MobileServices;
 using Xamarin.Utilities._MobileServices.iOS;
 
 namespace Xamarin.Auth._MobileServices

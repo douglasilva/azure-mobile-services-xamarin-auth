@@ -3,7 +3,7 @@
 using Android.OS;
 using Android.App;
 using Android.Support.CustomTabs;
-using Android.Support.CustomTabs.Chromium.SharedUtilities;
+using Android.Support.CustomTabs.Chromium.SharedUtilities._MobileServices;
 using Android.Content;
 
 namespace Xamarin.Auth._MobileServices

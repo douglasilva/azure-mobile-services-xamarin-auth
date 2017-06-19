@@ -17,10 +17,9 @@ using System.Collections.Generic;
 using Android.App;
 using Android.Net;
 using Android.OS;
-using Android.Support.CustomTabs;
 using Android.Widget;
 
-namespace Android.Support.CustomTabs.Chromium.SharedUtilities
+namespace Android.Support.CustomTabs.Chromium.SharedUtilities._MobileServices
 {
     /// <summary>
     /// This is a helper class to manage the connection from Activity to the CustomTabs 

@@ -7,7 +7,7 @@ using Android.Util;
 using Android.Text;
 using System.Text;
 
-namespace Android.Support.CustomTabs.Chromium.SharedUtilities
+namespace Android.Support.CustomTabs.Chromium.SharedUtilities._MobileServices
 {
     public class PackageManagerHelper
     {
