@@ -40,9 +40,6 @@ namespace Xamarin.Auth._MobileServices
         /// <see cref="https://components.xamarin.com/gettingstarted/xamandroidsupportcustomtabs"/>
         protected virtual AuthenticateUIType GetPlatformUINative(UIContext context)
         {
-            System.Uri uri_netfx = this.GetInitialUrlAsync().Result;
-            global::Android.Net.Uri uri_android = global::Android.Net.Uri.Parse(uri_netfx.AbsoluteUri);
-            CustomTabsConfiguration.UriAndroidOS = uri_android;
             AuthenticateUIType ui = new AuthenticateUIType(context, typeof(WebAuthenticatorNativeBrowserActivity));
             ui.PutExtra("ClearCookies", ClearCookiesBeforeLogin);
             var state = new WebAuthenticatorNativeBrowserActivity.State

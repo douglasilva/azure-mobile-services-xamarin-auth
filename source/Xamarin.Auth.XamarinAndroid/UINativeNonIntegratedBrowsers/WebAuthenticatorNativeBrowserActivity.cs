@@ -23,6 +23,7 @@ using Android.App;
 using Android.Content;
 using Android.Content.PM;
 using Android.OS;
+using Android.Support.CustomTabs;
 
 using Xamarin.Utilities._MobileServices.Android;
 
@@ -116,26 +117,8 @@ namespace Xamarin.Auth._MobileServices
                 {
                     this.ShowError("Authentication Error e.Message = ", e.Message);
                 }
-                BeginLoadingInitialUrl();
             };
-
-            // Build the UI
-            CustomTabsConfiguration.Initialize(this);
-            CustomTabsConfiguration.UICustomization();
-            //.......................................................
-            // Launching CustomTabs and url - minimal
-            CustomTabsConfiguration
-                .CustomTabActivityHelper
-                .LaunchUrlWithCustomTabsOrFallback
-                (
-                    // Activity/Context
-                    this,
-                    // CustomTabIntent
-                    CustomTabsConfiguration.CustomTabsIntent,
-                    CustomTabsConfiguration.UriAndroidOS,
-                    //  Fallback if CustomTabs do not exist
-                    CustomTabsConfiguration.WebViewFallback
-                );
+            BeginLoadingInitialUrl();
 
             return;
         }
@@ -155,41 +138,9 @@ namespace Xamarin.Auth._MobileServices
             StartActivity(intent);
 
             this.Finish();
-            this.CloseCustomTabsProcessKill();
 
             return;
         }
-
-        protected void CloseCustomTabsProcessKill()
-        {
-            System.Diagnostics.Debug.WriteLine($"      CloseCustomTabs");
-                  ;
-            ActivityManager manager = GetSystemService(global::Android.Content.Context.ActivityService) as ActivityManager;
-            List<ActivityManager.RunningAppProcessInfo> processes = manager.RunningAppProcesses.ToList();
-            //List<ActivityManager.RunningTaskInfo> tasks = (manager.Get().ToList();
-
-            foreach (ActivityManager.RunningAppProcessInfo process in processes)
-            {
-                String name = process.ProcessName;
-
-                System.Diagnostics.Debug.WriteLine($"      process");
-                System.Diagnostics.Debug.WriteLine($"          .Pid = {process.Pid}");
-                System.Diagnostics.Debug.WriteLine($"          .ProcessName = {process.ProcessName}");
-
-                if
-                    (
-                        name.Contains("com.android.browser")
-                    )
-                {
-                    int pid = process.Pid;
-                    Process.KillProcess(pid);
-                }
-
-            }
-
-            return;
-        }
-
 
         private bool customTabsShown = false;
 
@@ -212,21 +163,21 @@ namespace Xamarin.Auth._MobileServices
 
         void BeginLoadingInitialUrl()
         {
-            state.Authenticator.GetInitialUrlAsync().ContinueWith(t =>
+            var initalUri = state.Authenticator.GetInitialUrlAsync().Result;
+            var mgr = new CustomTabsActivityManager(this);
+            mgr.CustomTabsServiceConnected += delegate {
+                var builder = new CustomTabsIntent.Builder(mgr.Session);
+                builder.EnableUrlBarHiding();
+                builder.SetStartAnimations(this, Resource.Animation.slide_in_right, Resource.Animation.slide_out_left);
+                builder.SetExitAnimations(this, global::Android.Resource.Animation.SlideInLeft, global::Android.Resource.Animation.SlideOutRight);
+                mgr.LaunchUrl(initalUri.AbsoluteUri, builder.Build());
+            };
+            if (!mgr.BindService())
             {
-                if (t.IsFaulted)
-                {
-
-                    if (!state.Authenticator.ShowErrors)
-                        return;
-
-                    this.ShowError("Authentication Error t.Exception = ", t.Exception);
-                }
-                else
-                {
-                    //TODO: webView.LoadUrl(t.Result.AbsoluteUri);
-                }
-            }, TaskScheduler.FromCurrentSynchronizationContext());
+                var intent = new Intent(Intent.ActionView);
+                intent.SetData(global::Android.Net.Uri.Parse(initalUri.AbsoluteUri));
+                StartActivity(intent);
+            }
         }
 
         public override void OnBackPressed()
