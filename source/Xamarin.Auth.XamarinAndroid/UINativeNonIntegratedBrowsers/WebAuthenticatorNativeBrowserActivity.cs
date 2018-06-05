@@ -31,7 +31,7 @@ namespace Xamarin.Auth._MobileServices
 {
     [Activity
         (
-            Label = "Web Authenticator Native Broswer",
+            Label = "Web Authenticator Native Browser",
             LaunchMode = LaunchMode.SingleTop
         )
     ]
